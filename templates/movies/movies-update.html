@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<h2>Update movie</h2>
+<h1>{{movie.title}} update</h1>
 <form method="post" class="uniForm">
   {% csrf_token %}
   {{ form|crispy }}
